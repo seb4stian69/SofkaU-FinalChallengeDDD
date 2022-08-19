@@ -7,19 +7,13 @@ import co.com.sofka.ventas.almacen.objetosvalor.UbicacionID;
 
 public class Ubicacion extends Entity<UbicacionID> {
 
-    private final UbicacionID ubicacionID;
     private final Direccion direccion;
     private final Ciudad ciudad;
 
     public Ubicacion(UbicacionID entityId, UbicacionID ubicacionID, Direccion direccion, Ciudad ciudad) {
         super(entityId);
-        this.ubicacionID = ubicacionID;
         this.direccion = direccion;
         this.ciudad = ciudad;
-    }
-
-    public UbicacionID getUbicacionID() {
-        return ubicacionID;
     }
 
     public Direccion getDireccion() {
