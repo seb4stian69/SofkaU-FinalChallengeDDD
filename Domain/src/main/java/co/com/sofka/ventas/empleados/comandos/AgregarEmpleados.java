@@ -2,6 +2,7 @@ package co.com.sofka.ventas.empleados.comandos;
 
 import co.com.sofka.domain.generic.Command;
 import co.com.sofka.ventas.empleados.objetosvalor.Almacen;
+import co.com.sofka.ventas.empleados.objetosvalor.EmpleadoID;
 
 public class AgregarEmpleados extends Command {
 
