@@ -1,4 +1,4 @@
 package co.com.sofka.ventas.empleados.objetosvalor;
 
-public class Venta {
+public class Almacen {
 }
