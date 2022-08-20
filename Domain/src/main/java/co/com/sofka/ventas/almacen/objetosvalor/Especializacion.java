@@ -23,7 +23,7 @@ public class Especializacion implements ValueObject<Especializacion.Tipo> {
     }
 
     public enum Tipo {
-        Muebles, Colchones, MueblesYcolchones
+        Muebles, Colchones, MueblesColchones
     }
 
 }
