@@ -1,4 +1,27 @@
 package co.com.sofka.ventas.almacen.eventos;
 
-public class ProductoAgregado {
+import co.com.sofka.domain.generic.DomainEvent;
+import co.com.sofka.ventas.almacen.objetosvalor.PrecioProducto;
+import co.com.sofka.ventas.almacen.objetosvalor.ProductoID;
+import co.com.sofka.ventas.almacen.objetosvalor.TipoProducto;
+
+public class ProductoAgregado extends DomainEvent {
+
+    private final TipoProducto tipoProducto;
+    private final PrecioProducto precioProducto;
+
+    public ProductoAgregado(ProductoID productoId, TipoProducto tipoProducto, PrecioProducto precioProducto) {
+        super("co.com.sofka.ventas.ProductoAgregado");
+        this.tipoProducto = tipoProducto;
+        this.precioProducto = precioProducto;
+    }
+
+    public TipoProducto getTipoProducto() {
+        return tipoProducto;
+    }
+
+    public PrecioProducto getPrecioProducto() {
+        return precioProducto;
+    }
+
 }
