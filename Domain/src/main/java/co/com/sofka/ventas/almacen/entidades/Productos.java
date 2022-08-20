@@ -10,7 +10,7 @@ public class Productos extends Entity<ProductoID> {
     private final TipoProducto  tipoProducto;
     private final PrecioProducto precioProducto;
 
-    public Productos(ProductoID entityId, ProductoID productoID, TipoProducto tipoProducto, PrecioProducto precioProducto) {
+    public Productos(ProductoID entityId, TipoProducto tipoProducto, PrecioProducto precioProducto) {
         super(entityId);
         this.tipoProducto = tipoProducto;
         this.precioProducto = precioProducto;

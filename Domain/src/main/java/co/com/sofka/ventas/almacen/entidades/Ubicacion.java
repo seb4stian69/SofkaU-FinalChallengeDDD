@@ -10,7 +10,7 @@ public class Ubicacion extends Entity<UbicacionID> {
     private final Direccion direccion;
     private final Ciudad ciudad;
 
-    public Ubicacion(UbicacionID entityId, UbicacionID ubicacionID, Direccion direccion, Ciudad ciudad) {
+    public Ubicacion(UbicacionID entityId, Direccion direccion, Ciudad ciudad) {
         super(entityId);
         this.direccion = direccion;
         this.ciudad = ciudad;
