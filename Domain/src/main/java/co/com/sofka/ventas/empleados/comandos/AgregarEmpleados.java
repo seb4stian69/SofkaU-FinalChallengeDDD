@@ -5,15 +5,15 @@ import co.com.sofka.ventas.empleados.objetosvalor.Almacen;
 
 public class AgregarEmpleados extends Command {
 
-    private final EmpeladoID empleadoID;
+    private final EmpleadoID empleadoID;
     private final Almacen almacen;
 
-    public AgregarEmpleados(EmpeladoID empleadoID, Almacen almacen) {
+    public AgregarEmpleados(EmpleadoID empleadoID, Almacen almacen) {
         this.empleadoID = empleadoID;
         this.almacen = almacen;
     }
 
-    public EmpeladoID getEmpleadoID() {
+    public EmpleadoID getEmpleadoID() {
         return empleadoID;
     }
 
