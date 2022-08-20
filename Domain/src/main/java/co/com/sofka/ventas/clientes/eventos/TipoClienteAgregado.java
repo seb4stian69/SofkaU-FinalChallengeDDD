@@ -7,17 +7,17 @@ import co.com.sofka.ventas.clientes.objetosvalor.TipoClienteID;
 
 public class TipoClienteAgregado extends DomainEvent {
 
-    private final ClienteID clienteId;
+    private final TipoClienteID tipoClienteID;
     private final Tipo tipo;
 
-    public TipoClienteAgregado(ClienteID clienteId ,Tipo tipo) {
+    public TipoClienteAgregado(TipoClienteID clienteId ,Tipo tipo) {
         super("co.com.sofka.ventas.TipoClienteAgregado");
-        this.clienteId = clienteId;
+        this.tipoClienteID = clienteId;
         this.tipo = tipo;
     }
 
-    public ClienteID getClienteId() {
-        return clienteId;
+    public TipoClienteID getTipoClienteID() {
+        return tipoClienteID;
     }
 
     public Tipo getTipo() {

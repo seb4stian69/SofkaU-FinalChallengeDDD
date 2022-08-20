@@ -9,12 +9,10 @@ import co.com.sofka.ventas.clientes.objetosvalor.NumeroTelefono;
 public class AgregarDatosPersonales extends Command {
 
     private final DatosPersonalesID datosPersonalesId;
-    private final ClienteID clienteId;
     private final Nombre nombre;
     private final NumeroTelefono numeroTelefono;
 
-    public AgregarDatosPersonales(DatosPersonalesID datosPersonalesId,ClienteID clienteId ,Nombre nombre, NumeroTelefono numeroTelefono) {
-        this.clienteId = clienteId;
+    public AgregarDatosPersonales(DatosPersonalesID datosPersonalesId,Nombre nombre, NumeroTelefono numeroTelefono) {
         this.datosPersonalesId = datosPersonalesId;
         this.nombre = nombre;
         this.numeroTelefono = numeroTelefono;
@@ -22,10 +20,6 @@ public class AgregarDatosPersonales extends Command {
 
     public DatosPersonalesID getDatosPersonalesId() {
         return datosPersonalesId;
-    }
-
-    public ClienteID getClienteId() {
-        return clienteId;
     }
 
     public Nombre getNombre() {

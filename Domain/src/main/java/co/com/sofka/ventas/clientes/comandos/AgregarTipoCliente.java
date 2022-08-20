@@ -8,21 +8,15 @@ import co.com.sofka.ventas.clientes.objetosvalor.TipoClienteID;
 public class AgregarTipoCliente extends Command {
 
     private final TipoClienteID tipoClienteID;
-    private final ClienteID clienteId;
     private final Tipo tipo;
 
-    public AgregarTipoCliente(TipoClienteID tipoClienteID,ClienteID clienteId ,Tipo tipo) {
-        this.clienteId = clienteId;
+    public AgregarTipoCliente(TipoClienteID tipoClienteID,Tipo tipo) {
         this.tipoClienteID = tipoClienteID;
         this.tipo = tipo;
     }
 
     public TipoClienteID getTipoClienteID() {
         return tipoClienteID;
-    }
-
-    public ClienteID getClienteId() {
-        return clienteId;
     }
 
     public Tipo getTipo() {

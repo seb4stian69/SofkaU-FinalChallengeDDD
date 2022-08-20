@@ -1,6 +1,6 @@
 package co.com.sofka.ventas.clientes.objetosvalor;
 
-import java.security.Identity;
+import co.com.sofka.domain.generic.Identity;
 
 public class ClienteID extends Identity {
 
