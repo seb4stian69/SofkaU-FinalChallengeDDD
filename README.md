@@ -3,7 +3,7 @@
 
 # Enlace del diagrama
 - [Diagrama del proyecto](https://drive.google.com/file/d/1oHiMYhR6F1S-KFM3DQzodQVo6dkyyO12/view?usp=sharing)
-![Image text]()
+![Imagen de prueba para el diagrama]()
 
 # Descripcion y resumen de carpetas
 - Bussines: Se encuentran los casos de uso y los test generados apartir de ellos
@@ -11,4 +11,4 @@
 
 # Descripcion de los test
 - Todos los test han sido aprobados
-![Image text]()
+![Image de prueba para la vista de test aprobados]()
