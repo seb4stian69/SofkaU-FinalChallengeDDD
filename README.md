@@ -10,5 +10,5 @@
 - Domain: Se encuentra la logica del negocio y los procesos dentro del mismo
 
 # Descripcion de los test
-- Todos los test han sido aprobados
-![Image de prueba para la vista de test aprobados]()
+- [Todos los test han sido aprobados](https://github.com/seb4stian69/RetoFinal_DDD/tree/main/Bussines/src/test/java)
+![Image de prueba para la vista de test aprobados](https://github.com/seb4stian69/RetoFinal_DDD/blob/main/images/TestAprobados.jpeg)
