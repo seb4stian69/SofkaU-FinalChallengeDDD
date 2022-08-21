@@ -1,7 +1,7 @@
 package co.com.sofka.ventas.empleados.entidades;
 
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofka.ventas.clientes.objetosvalor.Nombre;
+import co.com.sofka.ventas.empleados.objetosvalor.Nombre;
 import co.com.sofka.ventas.empleados.objetosvalor.DatosPersonalesID;
 import co.com.sofka.ventas.empleados.objetosvalor.MedioPago;
 import co.com.sofka.ventas.empleados.objetosvalor.Salario;
