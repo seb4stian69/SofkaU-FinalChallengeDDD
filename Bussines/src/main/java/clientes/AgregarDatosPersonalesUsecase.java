@@ -19,5 +19,7 @@ public class AgregarDatosPersonalesUsecase extends UseCase<RequestCommand<Agrega
             command.getNumeroTelefono()
         );
 
+        emit().onResponse(new ResponseEvents(cliente.getUncommittedChanges()));
+
     }
 }

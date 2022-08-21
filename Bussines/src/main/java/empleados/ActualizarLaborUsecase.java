@@ -19,5 +19,7 @@ public class ActualizarLaborUsecase extends UseCase<RequestCommand<ActualizarLab
             command.getHorario()
         );
 
+        emit().onResponse(new ResponseEvents(empleado.getUncommittedChanges()));
+
     }
 }

@@ -18,5 +18,7 @@ public class AgregarTipoClienteUsecase extends UseCase<RequestCommand<AgregarTip
             command.getTipo()
         );
 
+        emit().onResponse(new ResponseEvents(cliente.getUncommittedChanges()));
+
     }
 }

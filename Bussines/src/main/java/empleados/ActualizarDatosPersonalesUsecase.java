@@ -20,5 +20,7 @@ public class ActualizarDatosPersonalesUsecase extends UseCase<RequestCommand<Act
             command.getSalario()
         );
 
+        emit().onResponse(new ResponseEvents(empleado.getUncommittedChanges()));
+
     }
 }

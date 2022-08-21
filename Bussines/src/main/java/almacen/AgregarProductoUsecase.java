@@ -19,5 +19,7 @@ public class AgregarProductoUsecase extends UseCase<RequestCommand<AgregoProduct
             command.getPrecioProducto()
         );
 
+        emit().onResponse(new ResponseEvents(almacen.getUncommittedChanges()));
+
     }
 }

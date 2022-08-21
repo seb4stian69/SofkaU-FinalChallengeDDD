@@ -20,5 +20,7 @@ public class RealizarCompraUsecase extends UseCase<RequestCommand<RealizarCompra
             command.getProductoId()
         );
 
+        emit().onResponse(new ResponseEvents(cliente.getUncommittedChanges()));
+
     }
 }

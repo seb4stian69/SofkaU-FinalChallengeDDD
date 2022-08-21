@@ -19,5 +19,7 @@ public class AgregarUbicacionUsecase  extends UseCase<RequestCommand<AgregarUbic
             command.getCiudad()
         );
 
+        emit().onResponse(new ResponseEvents(almacen.getUncommittedChanges()));
+
     }
 }

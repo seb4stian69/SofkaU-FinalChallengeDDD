@@ -11,7 +11,10 @@ public class AgregarClienteUsecase extends UseCase<RequestCommand<AgregarCliente
     public void executeUseCase(RequestCommand<AgregarCliente> agregarClienteRequestCommand) {
 
         var command = agregarClienteRequestCommand.getCommand();
-        var cliente = Clientes.from(command.getClienteid(),repository().getEventsBy(command.getClienteid().value()));
+        var cliente = new Clientes(
+            command.getClienteid(),
+            command.getFechaCompra()
+        );
 
         emit().onResponse(new ResponseEvents(cliente.getUncommittedChanges()));
 

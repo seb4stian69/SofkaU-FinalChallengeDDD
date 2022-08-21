@@ -20,5 +20,7 @@ public class AgregarDatosPersonalesUsecase extends UseCase<RequestCommand<Agrega
                 command.getSalario()
         );
 
+        emit().onResponse(new ResponseEvents(empleado.getUncommittedChanges()));
+
     }
 }

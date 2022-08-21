@@ -11,7 +11,11 @@ public class AgregarEmpleadosUsecase extends UseCase<RequestCommand<AgregarEmple
     public void executeUseCase(RequestCommand<AgregarEmpleados> agregarEmpleadosRequestCommand) {
 
         var command = agregarEmpleadosRequestCommand.getCommand();
-        var empleado = Empleados.from(command.getEmpleadoID(),repository().getEventsBy(command.getEmpleadoID().value()));
+
+        var empleado = new Empleados(
+            command.getEmpleadoID(),
+            command.getAlmacen()
+        );
 
         emit().onResponse(new ResponseEvents(empleado.getUncommittedChanges()));
 

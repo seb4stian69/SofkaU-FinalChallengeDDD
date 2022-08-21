@@ -19,5 +19,7 @@ public class AgregarLaborUsecase extends UseCase<RequestCommand<AgregarLabor>, R
                 command.getHorario()
         );
 
+        emit().onResponse(new ResponseEvents(empleado.getUncommittedChanges()));
+
     }
 }

@@ -11,7 +11,10 @@ public class CrearAlmacenUsecase extends UseCase<RequestCommand<CrearAlmacen>, R
     public void executeUseCase(RequestCommand<CrearAlmacen> crearAlmacenRequestCommand) {
 
         var command = crearAlmacenRequestCommand.getCommand();
-        var almacen = Almacen.from(command.getAlmacenID(), repository().getEventsBy(command.getAlmacenID().value()));
+        var almacen = new Almacen(
+            command.getAlmacenID(),
+            command.getEspecializacion()
+        );
 
         emit().onResponse(new ResponseEvents(almacen.getUncommittedChanges()));
 
