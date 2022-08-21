@@ -6,8 +6,8 @@
 ![Imagen de prueba para el diagrama](https://github.com/seb4stian69/RetoFinal_DDD/blob/main/images/Diagrama.png)
 
 # Descripcion y resumen de carpetas
-- Bussines: Se encuentran los casos de uso y los test generados apartir de ellos
-- Domain: Se encuentra la logica del negocio y los procesos dentro del mismo
+- [Bussines](https://github.com/seb4stian69/RetoFinal_DDD/tree/main/Bussines): Se encuentran los casos de uso y los test generados apartir de ellos
+- [Domain](https://github.com/seb4stian69/RetoFinal_DDD/tree/main/Domain): Se encuentra la logica del negocio y los procesos dentro del mismo
 
 # Descripcion de los test
 - [Todos los test han sido aprobados](https://github.com/seb4stian69/RetoFinal_DDD/tree/main/Bussines/src/test/java)
