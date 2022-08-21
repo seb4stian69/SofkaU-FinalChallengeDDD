@@ -1,4 +1,19 @@
 package clientes;
 
-public class AgregarClienteUsecase {
+import co.com.sofka.business.generic.UseCase;
+import co.com.sofka.business.support.RequestCommand;
+import co.com.sofka.business.support.ResponseEvents;
+import co.com.sofka.ventas.clientes.Clientes;
+import co.com.sofka.ventas.clientes.comandos.AgregarCliente;
+
+public class AgregarClienteUsecase extends UseCase<RequestCommand<AgregarCliente>, ResponseEvents> {
+    @Override
+    public void executeUseCase(RequestCommand<AgregarCliente> agregarClienteRequestCommand) {
+
+        var command = agregarClienteRequestCommand.getCommand();
+        var cliente = Clientes.from(command.getClienteid(),repository().getEventsBy(command.getClienteid().value()));
+
+        emit().onResponse(new ResponseEvents(cliente.getUncommittedChanges()));
+
+    }
 }
