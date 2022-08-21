@@ -3,7 +3,7 @@
 
 # Enlace del diagrama
 - [Diagrama del proyecto](https://drive.google.com/file/d/1oHiMYhR6F1S-KFM3DQzodQVo6dkyyO12/view?usp=sharing)
-![Imagen de prueba para el diagrama]()
+![Imagen de prueba para el diagrama](https://github.com/seb4stian69/RetoFinal_DDD/blob/main/images/Diagrama.png)
 
 # Descripcion y resumen de carpetas
 - Bussines: Se encuentran los casos de uso y los test generados apartir de ellos
